@@ -1092,7 +1092,7 @@ ol {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 20px;
-  color: #2ed06e;
+  color: #173e35;
   text-transform: capitalize;
 }
 
@@ -2608,7 +2608,7 @@ ol {
   top: 0;
   height: 100%;
   width: 100%;
-  border: 1px solid #2ed06e;
+  border: 1px solid #173e35;
   border-radius: 50%;
   -webkit-animation: pulse-border-2 1.5s linear infinite;
   animation: pulse-border-2 1.5s linear infinite;
