@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Our Pricng - Spark App Landing Page Template.</title>
-    <meta name="description" content="" />
+    <title>Categories - Wellness Workx</title>
+    <meta name="description" content="Explore our business, sports, and non-profit wellness solutions" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.svg" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -16,18 +16,9 @@
     <link rel="stylesheet" href="assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="assets/css/glightbox.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
-        your experience and security.
-      </p>
-    <![endif]-->
-
     <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-inner">
@@ -60,19 +51,19 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a href="index.html" class="active" aria-label="Toggle navigation">Home</a>
+                                        <a href="index.html" aria-label="Toggle navigation">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="about-us.html" aria-label="Toggle navigation">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dd-menu collapsed" href="javascript:void(0)" data-bs-toggle="collapse"
+                                        <a class="dd-menu collapsed active" href="javascript:void(0)" data-bs-toggle="collapse"
                                             data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
                                             aria-expanded="false" aria-label="Toggle navigation">Categories</a>
                                         <ul class="sub-menu collapse" id="submenu-1-1">
-                                            <li class="nav-item"><a href="pricing.html">Buisness</a></li>
-                                            <li class="nav-item"><a href="pricing.html">Sports</a></li>
-                                            <li class="nav-item"><a href="pricing.html">Non-Profit</a></li>
+                                            <li class="nav-item"><a href="#business">Business</a></li>
+                                            <li class="nav-item"><a href="#sports">Sports</a></li>
+                                            <li class="nav-item"><a href="#nonprofit">Non-Profit</a></li>
                                         </ul>
                                     </li>
                                     <li class="nav-item">
@@ -93,15 +84,15 @@
     <!-- End Header Area -->
 
     <!-- Start Breadcrumbs -->
-    <div class="breadcrumbs">
+    <div class="breadcrumbs" style="background-color: #4a90e2;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">Catagories</h1>
+                        <h1 class="page-title">Categories</h1>
                         <ul class="breadcrumb-nav">
                             <li><a href="index.html">Home</a></li>
-                            <li>Our Catagories</li>
+                            <li>Categories</li>
                         </ul>
                     </div>
                 </div>
@@ -111,101 +102,167 @@
     <!-- End Breadcrumbs -->
 
     <!-- Start Categories Table Area -->
-     <section id="pricing" class="pricing-table section">
+     <section id="categories" class="pricing-table section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Categories</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Our Industry Categories</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">Explore the various industries we cater to, including Business, Sports, and Non-Profit sectors.</p>
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Our Industries</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Wellness Solutions By Category</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">We provide tailored wellness programs for these key industry sectors</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Interactive Category Cards -->
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-                    <!-- Single Table -->
-                    <div class="single-table">
-                        <!-- Table Head -->
+                <!-- Business Category -->
+                <div id="business" class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="single-table" style="cursor: pointer;" onclick="toggleContent('business-content')">
                         <div class="table-head">
                             <h4 class="title">Business</h4>
-                            <p class="sub-title">Innovative Solutions for Business Growth</p>
+                            <p class="sub-title">Corporate Wellness Solutions</p>
                         </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
                         <div class="table-content">
-                            <!-- Table List -->
                             <ul class="table-list">
-                                <li>Top-Tier Wellness</li>
-                                <li>Affordable Cost</li>
-                                <li>Minimal Staff</li>
-                                <li>Employee Benfit</li>
-                                <li>No Regulatory Issues</li>
+                                <li>Top-Tier Wellness Products</li>
+                                <li>Affordable Implementation</li>
+                                <li>Minimal Staff Resources</li>
+                                <li>Enhanced Employee Benefits</li>
+                                <li>No Regulatory Complications</li>
                             </ul>
-                            <!-- End Table List -->
                         </div>
-                        <!-- End Table Content -->
-                        
+                        <div id="business-content" class="category-details" style="display: none; padding: 20px 0;">
+                            <p>Our business wellness programs deliver premium health solutions that improve employee well-being and productivity while requiring minimal administrative oversight.</p>
+                            <div class="button">
+                                <a href="contact.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End Single Table-->
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-                    <!-- Single Table -->
-                    <div class="single-table middle">
-                        
-                        <!-- Table Head -->
+
+                <!-- Sports Category -->
+                <div id="sports" class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="single-table middle" style="cursor: pointer;" onclick="toggleContent('sports-content')">
                         <div class="table-head">
                             <h4 class="title">Sports</h4>
-                            <p class="sub-title">Empowering Athletes and Teams</p>
+                            <p class="sub-title">Athletic Performance Solutions</p>
                         </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
                         <div class="table-content">
-                            <!-- Table List -->
                             <ul class="table-list">
-                                <li>Exercise</li>
-                                <li>Nutrition Plans</li>
+                                <li>Performance Nutrition</li>
+                                <li>Recovery Support</li>
                                 <li>Training Programs</li>
                                 <li>Team Management</li>
-                                <li>Fundrasing</li>
+                                <li>Fundraising Support</li>
                             </ul>
-                            <!-- End Table List -->
                         </div>
-                        <!-- End Table Content -->
-                       
+                        <div id="sports-content" class="category-details" style="display: none; padding: 20px 0;">
+                            <p>We believe all young athletes should have access to top-level training regardless of financial means, providing nutrition, training, and fundraising support.</p>
+                            <div class="button">
+                                <a href="contact.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End Single Table-->
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".8s">
-                    <!-- Single Table -->
-                    <div class="single-table">
-                        <!-- Table Head -->
+
+                <!-- Non-Profit Category -->
+                <div id="nonprofit" class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="single-table" style="cursor: pointer;" onclick="toggleContent('nonprofit-content')">
                         <div class="table-head">
                             <h4 class="title">Non-Profit</h4>
-                            <p class="sub-title">Supporting Community and Social Causes</p>
+                            <p class="sub-title">Community Health Initiatives</p>
                         </div>
-                        <!-- End Table Head -->
-                        <!-- Start Table Content -->
                         <div class="table-content">
-                            <!-- Table List -->
                             <ul class="table-list">
-                                <li>Fundraising Strategies</li>
+                                <li>Fundraising Events</li>
                                 <li>Volunteer Management</li>
                                 <li>Community Outreach</li>
-                                <li>Program Development</li>
-                                <li>Advocacy and Awareness</li>
+                                <li>Health Education</li>
+                                <li>Advocacy Support</li>
                             </ul>
-                            <!-- End Table List -->
                         </div>
-                        <!-- End Table Content -->
-                        
+                        <div id="nonprofit-content" class="category-details" style="display: none; padding: 20px 0;">
+                            <p>We've raised over $20,000 for local charities through events like our Backyard Marathon, helping non-profits expand their health initiatives.</p>
+                            <div class="button">
+                                <a href="contact.html" class="btn">Learn More</a>
+                            </div>
+                        </div>
                     </div>
-                    <!-- End Single Table-->
                 </div>
             </div>
         </div>
     </section>
     <!--/ End Categories Table Area -->
+    
+    <!-- Category Showcase Section -->
+    <section class="section bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Featured Solutions</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">How We Make A Difference</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Category Showcase Cards -->
+            <div class="row">
+                <!-- Business Showcase -->
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+                    <div class="single-service" style="min-height: 320px;">
+                        <div class="main-icon">
+                            <i class="lni lni-grid-alt"></i>
+                        </div>
+                        <h4 class="text-title">Business Impact</h4>
+                        <p>We've developed programs providing top-tier wellness products that have a profound impact on employee well-being without requiring significant resources from your staff.</p>
+                    </div>
+                </div>
+                
+                <!-- Sports Showcase -->
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="single-service" style="min-height: 320px;">
+                        <div class="main-icon">
+                            <i class="lni lni-medal"></i>
+                        </div>
+                        <h4 class="text-title">Sports Excellence</h4>
+                        <p>We believe all young athletes should have the opportunity to train with travel sports teams regardless of the financial means of their families.</p>
+                    </div>
+                </div>
+                
+                <!-- Non-Profit Showcase -->
+                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".8s">
+                    <div class="single-service" style="min-height: 320px;">
+                        <div class="main-icon">
+                            <i class="lni lni-heart"></i>
+                        </div>
+                        <h4 class="text-title">Community Support</h4>
+                        <p>We ran a Backyard Marathon Event raising over $20,000 for two local charities in Chicago, IL, demonstrating our commitment to community health initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Category Showcase Section -->
+
+    <!-- Start Call to Action -->
+    <section class="call-action section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="inner-content" style="text-align: center; background-color: #4a90e2; padding: 50px; border-radius: 10px;">
+                        <h2 style="color: #fff;">Ready to find the perfect wellness solution for your needs?</h2>
+                        <p style="color: #fff; margin: 20px 0;">Contact us today to discuss how we can customize a program for your business, sports team, or non-profit organization.</p>
+                        <div class="button">
+                            <a href="contact.html" class="btn" style="background-color: #fff; color: #4a90e2;">Get Started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Call to Action -->
     
     <!-- Start Footer Area -->
     <footer class="footer section">
@@ -222,7 +279,7 @@
                                         <img src="assets/images/logo/white-logo.svg" alt="#">
                                     </a>
                                 </div>
-                                <p>Making the world a better place through constructing elegant hierarchies.</p>
+                                <p>Making the world a better place through wellness.</p>
                                 <h4 class="social-title">Follow Us On:</h4>
                                 <ul class="social">
                                     <li><a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a></li>
@@ -238,12 +295,11 @@
                         <div class="col-lg-2 col-md-6 col-12">
                             <!-- Single Widget -->
                             <div class="single-footer f-link">
-                                <h3>Solutions</h3>
+                                <h3>Categories</h3>
                                 <ul>
-                                    <li><a href="javascript:void(0)">Marketing</a></li>
-                                    <li><a href="javascript:void(0)">Analytics</a></li>
-                                    <li><a href="javascript:void(0)">Commerce</a></li>
-                                    <li><a href="javascript:void(0)">Insights</a></li>
+                                    <li><a href="#business">Business</a></li>
+                                    <li><a href="#sports">Sports</a></li>
+                                    <li><a href="#nonprofit">Non-Profit</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -253,10 +309,8 @@
                             <div class="single-footer f-link">
                                 <h3>Support</h3>
                                 <ul>
-                                    <li><a href="javascript:void(0)">Pricing</a></li>
                                     <li><a href="javascript:void(0)">Documentation</a></li>
                                     <li><a href="javascript:void(0)">Guides</a></li>
-                                    <li><a href="javascript:void(0)">API Status</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -265,7 +319,6 @@
                             <!-- Single Widget -->
                             <div class="single-footer newsletter">
                                 <h3>Subscribe</h3>
-                                <p>Subscribe to our newsletter for the latest updates</p>
                                 <form action="#" method="get" target="_blank" class="newsletter-form">
                                     <input name="EMAIL" placeholder="Email address" required="required" type="email">
                                     <div class="button">
@@ -287,11 +340,11 @@
                 <div class="inner-content">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
-                            <p class="copyright-text">© 2023 Spark - All Rights Reserved</p>
+                            <p class="copyright-text">© 2025 Wellness Workx - All Rights Reserved</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
-                            <p class="copyright-owner">Designed and Developed by <a href="https://uideck.com/"
-                                    rel="nofollow" target="_blank">UIdeck</a>
+                            <p class="copyright-owner">Designed and Developed by <a href="https://www.rosedevelopment.org/"
+                                    rel="nofollow" target="_blank">Rose Development</a>
                         </div>
                     </div>
                 </div>
@@ -313,6 +366,17 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
+    <!-- Category interaction script -->
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
 </body>
-
 </html>
