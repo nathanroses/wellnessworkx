@@ -425,5 +425,43 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
+   
+    <!-- ========================= Category Tab Fix ========================= -->
+<script>
+    // This script fixes the tab selection issue where Business tab remains highlighted
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all tab buttons
+        const tabButtons = document.querySelectorAll('#categoryTabs .nav-link');
+        
+        // Add click event listener to each button
+        tabButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Reset styles for all tabs
+                tabButtons.forEach(btn => {
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                });
+                
+                // Apply active style to clicked tab
+                if (this.id === 'business-tab') {
+                    this.style.backgroundColor = '#3498db';
+                    this.style.color = 'white';
+                } else if (this.id === 'sports-tab') {
+                    this.style.backgroundColor = '#f39c12';
+                    this.style.color = 'white';
+                } else if (this.id === 'nonprofit-tab') {
+                    this.style.backgroundColor = '#2ecc71';
+                    this.style.color = 'white';
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
