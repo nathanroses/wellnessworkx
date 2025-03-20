@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Categories - Wellness Workx</title>
-    <meta name="description" content="Explore our business, sports, and non-profit wellness solutions" />
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
 
@@ -57,14 +57,7 @@
                                         <a href="about-us.html" aria-label="Toggle navigation">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="dd-menu collapsed active" href="javascript:void(0)" data-bs-toggle="collapse"
-                                            data-bs-target="#submenu-1-1" aria-controls="navbarSupportedContent"
-                                            aria-expanded="false" aria-label="Toggle navigation">Categories</a>
-                                        <ul class="sub-menu collapse" id="submenu-1-1">
-                                            <li class="nav-item"><a href="#business">Business</a></li>
-                                            <li class="nav-item"><a href="#sports">Sports</a></li>
-                                            <li class="nav-item"><a href="#nonprofit">Non-Profit</a></li>
-                                        </ul>
+                                        <a href="categories.html" class="active" aria-label="Toggle navigation">Categories</a>
                                     </li>
                                     <li class="nav-item">
                                         <a href="contact.html" aria-label="Toggle navigation">Contact</a>
@@ -89,7 +82,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
                     <div class="breadcrumbs-content">
-                        <h1 class="page-title">Categories</h1>
+                        <h1 class="page-title">Our Industry Categories</h1>
                         <ul class="breadcrumb-nav">
                             <li><a href="index.html">Home</a></li>
                             <li>Categories</li>
@@ -101,91 +94,207 @@
     </div>
     <!-- End Breadcrumbs -->
 
-    <!-- Start Categories Table Area -->
-     <section id="categories" class="pricing-table section">
+    <!-- Start Categories Section -->
+    <section id="categories" class="section">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Our Industries</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Wellness Solutions By Category</h2>
-                        <p class="wow fadeInUp" data-wow-delay=".6s">We provide tailored wellness programs for these key industry sectors</p>
+                        <h3 class="wow zoomIn" data-wow-delay=".2s">Solutions For Every Need</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay=".4s">Choose Your Industry</h2>
+                        <p class="wow fadeInUp" data-wow-delay=".6s">Explore our tailored wellness solutions for these key sectors</p>
                     </div>
                 </div>
             </div>
 
-            <!-- Interactive Category Cards -->
+            <!-- Category Navigation Tabs -->
             <div class="row">
-                <!-- Business Category -->
-                <div id="business" class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="single-table" style="cursor: pointer;" onclick="toggleContent('business-content')">
-                        <div class="table-head">
-                            <h4 class="title">Business</h4>
-                            <p class="sub-title">Corporate Wellness Solutions</p>
+                <div class="col-12">
+                    <ul class="nav nav-pills mb-5 justify-content-center" id="categoryTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="business-tab" data-bs-toggle="pill" data-bs-target="#business" type="button" role="tab" aria-controls="business" aria-selected="true" style="border-radius: 30px; padding: 15px 30px; margin: 0 10px; background-color: #3498db; color: white;">Business</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="sports-tab" data-bs-toggle="pill" data-bs-target="#sports" type="button" role="tab" aria-controls="sports" aria-selected="false" style="border-radius: 30px; padding: 15px 30px; margin: 0 10px;">Sports</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="nonprofit-tab" data-bs-toggle="pill" data-bs-target="#nonprofit" type="button" role="tab" aria-controls="nonprofit" aria-selected="false" style="border-radius: 30px; padding: 15px 30px; margin: 0 10px;">Non-Profit</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Category Content -->
+            <div class="tab-content" id="categoryTabContent">
+                <!-- Business Tab -->
+                <div class="tab-pane fade show active" id="business" role="tabpanel" aria-labelledby="business-tab">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="image wow fadeInLeft" data-wow-delay=".3s">
+                                <img src="assets/images/slpromo.png" alt="Business Solutions">
+                            </div>
                         </div>
-                        <div class="table-content">
-                            <ul class="table-list">
-                                <li>Top-Tier Wellness Products</li>
-                                <li>Affordable Implementation</li>
-                                <li>Minimal Staff Resources</li>
-                                <li>Enhanced Employee Benefits</li>
-                                <li>No Regulatory Complications</li>
-                            </ul>
-                        </div>
-                        <div id="business-content" class="category-details" style="display: none; padding: 20px 0;">
-                            <p>Our business wellness programs deliver premium health solutions that improve employee well-being and productivity while requiring minimal administrative oversight.</p>
-                            <div class="button">
-                                <a href="contact.html" class="btn">Learn More</a>
+                        <div class="col-lg-6 col-12">
+                            <div class="content">
+                                <h3 class="heading wow fadeInUp" data-wow-delay=".5s">Corporate Wellness Programs</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".6s">We've developed a program providing top-tier wellness products that have a profound impact on employee well-being with minimal resource investment from your company.</p>
+                                
+                                <div class="benefits mt-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Premium Products</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Affordable Cost</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Minimal Staff Time</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Employee Benefit</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-5">
+                                    <a href="contact.html" class="btn" style="background-color: #3498db;">Get Started</a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Sports Category -->
-                <div id="sports" class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="single-table middle" style="cursor: pointer;" onclick="toggleContent('sports-content')">
-                        <div class="table-head">
-                            <h4 class="title">Sports</h4>
-                            <p class="sub-title">Athletic Performance Solutions</p>
+                
+                <!-- Sports Tab -->
+                <div class="tab-pane fade" id="sports" role="tabpanel" aria-labelledby="sports-tab">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12 order-2 order-lg-1">
+                            <div class="content">
+                                <h3 class="heading wow fadeInUp" data-wow-delay=".5s">Athletic Performance & Development</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".6s">We believe all young athletes should have the opportunity to train with travel sports teams regardless of their families' financial means. Our programs focus on nutrition, training, and fundraising support.</p>
+                                
+                                <div class="benefits mt-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Nutrition Planning</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Training Programs</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Team Management</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Fundraising Support</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-5">
+                                    <a href="contact.html" class="btn" style="background-color: #2ecc71;">Get Started</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="table-content">
-                            <ul class="table-list">
-                                <li>Performance Nutrition</li>
-                                <li>Recovery Support</li>
-                                <li>Training Programs</li>
-                                <li>Team Management</li>
-                                <li>Fundraising Support</li>
-                            </ul>
-                        </div>
-                        <div id="sports-content" class="category-details" style="display: none; padding: 20px 0;">
-                            <p>We believe all young athletes should have access to top-level training regardless of financial means, providing nutrition, training, and fundraising support.</p>
-                            <div class="button">
-                                <a href="contact.html" class="btn">Learn More</a>
+                        <div class="col-lg-6 col-12 order-1 order-lg-2">
+                            <div class="image wow fadeInRight" data-wow-delay=".3s">
+                                <img src="assets/images/slepromo.png" alt="Sports Solutions">
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!-- Non-Profit Category -->
-                <div id="nonprofit" class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="single-table" style="cursor: pointer;" onclick="toggleContent('nonprofit-content')">
-                        <div class="table-head">
-                            <h4 class="title">Non-Profit</h4>
-                            <p class="sub-title">Community Health Initiatives</p>
+                
+                <!-- Non-Profit Tab -->
+                <div class="tab-pane fade" id="nonprofit" role="tabpanel" aria-labelledby="nonprofit-tab">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-12">
+                            <div class="image wow fadeInLeft" data-wow-delay=".3s">
+                                <img src="assets/images/about.png" alt="Non-Profit Solutions">
+                            </div>
                         </div>
-                        <div class="table-content">
-                            <ul class="table-list">
-                                <li>Fundraising Events</li>
-                                <li>Volunteer Management</li>
-                                <li>Community Outreach</li>
-                                <li>Health Education</li>
-                                <li>Advocacy Support</li>
-                            </ul>
-                        </div>
-                        <div id="nonprofit-content" class="category-details" style="display: none; padding: 20px 0;">
-                            <p>We've raised over $20,000 for local charities through events like our Backyard Marathon, helping non-profits expand their health initiatives.</p>
-                            <div class="button">
-                                <a href="contact.html" class="btn">Learn More</a>
+                        <div class="col-lg-6 col-12">
+                            <div class="content">
+                                <h3 class="heading wow fadeInUp" data-wow-delay=".5s">Community Health Initiatives</h3>
+                                <p class="wow fadeInUp" data-wow-delay=".6s">We ran a Backyard Marathon Event raising over $20,000 for two local charities in Chicago, IL. Our non-profit programs focus on community outreach, fundraising, and health advocacy.</p>
+                                
+                                <div class="benefits mt-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Fundraising Events</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".7s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Volunteer Management</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Community Outreach</h4>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="single-feature wow fadeInUp" data-wow-delay=".8s">
+                                                <div class="f-icon">
+                                                    <i class="lni lni-checkmark"></i>
+                                                </div>
+                                                <h4>Health Advocacy</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-5">
+                                    <a href="contact.html" class="btn" style="background-color: #f39c12;">Get Started</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,76 +302,26 @@
             </div>
         </div>
     </section>
-    <!--/ End Categories Table Area -->
-    
-    <!-- Category Showcase Section -->
-    <section class="section bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-title">
-                        <h3 class="wow zoomIn" data-wow-delay=".2s">Featured Solutions</h3>
-                        <h2 class="wow fadeInUp" data-wow-delay=".4s">How We Make A Difference</h2>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Category Showcase Cards -->
-            <div class="row">
-                <!-- Business Showcase -->
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="single-service" style="min-height: 320px;">
-                        <div class="main-icon">
-                            <i class="lni lni-grid-alt"></i>
-                        </div>
-                        <h4 class="text-title">Business Impact</h4>
-                        <p>We've developed programs providing top-tier wellness products that have a profound impact on employee well-being without requiring significant resources from your staff.</p>
-                    </div>
-                </div>
-                
-                <!-- Sports Showcase -->
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="single-service" style="min-height: 320px;">
-                        <div class="main-icon">
-                            <i class="lni lni-medal"></i>
-                        </div>
-                        <h4 class="text-title">Sports Excellence</h4>
-                        <p>We believe all young athletes should have the opportunity to train with travel sports teams regardless of the financial means of their families.</p>
-                    </div>
-                </div>
-                
-                <!-- Non-Profit Showcase -->
-                <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="single-service" style="min-height: 320px;">
-                        <div class="main-icon">
-                            <i class="lni lni-heart"></i>
-                        </div>
-                        <h4 class="text-title">Community Support</h4>
-                        <p>We ran a Backyard Marathon Event raising over $20,000 for two local charities in Chicago, IL, demonstrating our commitment to community health initiatives.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Category Showcase Section -->
+    <!-- End Categories Section -->
 
-    <!-- Start Call to Action -->
+    <!-- Start CTA Section -->
     <section class="call-action section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
-                    <div class="inner-content" style="text-align: center; background-color: #4a90e2; padding: 50px; border-radius: 10px;">
-                        <h2 style="color: #fff;">Ready to find the perfect wellness solution for your needs?</h2>
-                        <p style="color: #fff; margin: 20px 0;">Contact us today to discuss how we can customize a program for your business, sports team, or non-profit organization.</p>
-                        <div class="button">
-                            <a href="contact.html" class="btn" style="background-color: #fff; color: #4a90e2;">Get Started</a>
-                        </div>
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="text">
+                        <h2>Ready to transform your wellness journey?</h2>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="button">
+                        <a href="contact.html" class="btn">Contact Us Today</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Call to Action -->
+    <!-- End CTA Section -->
     
     <!-- Start Footer Area -->
     <footer class="footer section">
@@ -297,9 +356,9 @@
                             <div class="single-footer f-link">
                                 <h3>Categories</h3>
                                 <ul>
-                                    <li><a href="#business">Business</a></li>
-                                    <li><a href="#sports">Sports</a></li>
-                                    <li><a href="#nonprofit">Non-Profit</a></li>
+                                    <li><a href="javascript:void(0)">Business</a></li>
+                                    <li><a href="javascript:void(0)">Sports</a></li>
+                                    <li><a href="javascript:void(0)">Non-Profit</a></li>
                                 </ul>
                             </div>
                             <!-- End Single Widget -->
@@ -366,17 +425,5 @@
     <script src="assets/js/glightbox.min.js"></script>
     <script src="assets/js/count-up.min.js"></script>
     <script src="assets/js/main.js"></script>
-    
-    <!-- Category interaction script -->
-    <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            if (content.style.display === "none") {
-                content.style.display = "block";
-            } else {
-                content.style.display = "none";
-            }
-        }
-    </script>
 </body>
 </html>
