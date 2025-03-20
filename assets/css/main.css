@@ -2422,7 +2422,7 @@ ol {
     Intro Video CSS
 ========================================*/
 .intro-video-area {
-  background-color: #081828;
+  background-color: #000;
   position: relative;
   z-index: 9;
   padding-bottom: 0;
