@@ -924,7 +924,7 @@ ol {
   padding-bottom: 120px;
   z-index: 2;
   text-align: left;
-  background-color: #081828;
+  background-color: #2c3e50;
   background-image: url("../images/bread-bg/banner-bg.svg");
   background-size: cover;
   background-position: right;
@@ -1092,7 +1092,7 @@ ol {
   font-weight: 600;
   display: inline-block;
   margin-bottom: 20px;
-  color: #173e35;
+  color: #3498db;
   text-transform: capitalize;
 }
 
@@ -1191,7 +1191,7 @@ ol {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  background: #173e35;
+  background: #3498db;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1320,7 +1320,7 @@ ol {
   font-size: 15px;
   font-weight: 500;
   padding: 14px 30px;
-  background-color: #173e35;
+  background-color: #3498db;
   color: #fff;
   border: none;
   -webkit-transition: all 0.4s ease;
@@ -1359,7 +1359,7 @@ ol {
 
 .button .btn:hover {
   color: #fff;
-  background-color: #081828;
+  background-color: #2980b9;
 }
 
 .button {
@@ -1367,7 +1367,7 @@ ol {
 }
 
 .button .btn-alt {
-  background-color: #081828 !important;
+  background-color: #2ecc71 !important;
   color: #fff !important;
 }
 
@@ -1437,7 +1437,7 @@ ol {
   width: 100px;
   height: 100px;
   border-radius: 100%;
-  background: #173e35;
+  background: #3498db;
   -webkit-animation: preloader-fx 1.6s linear infinite;
   animation: preloader-fx 1.6s linear infinite;
 }
@@ -2062,7 +2062,7 @@ ol {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #173e35;
+  background-color: #3498db;
   z-index: 0;
 }
 
@@ -4846,7 +4846,7 @@ blockquote span {
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #081828;
+  background-color: #2c3e50;
   position: relative;
   padding-bottom: 0;
 }
