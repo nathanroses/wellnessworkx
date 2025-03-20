@@ -2016,7 +2016,7 @@ ol {
 
 .header .button .btn:hover {
   color: #fff;
-  background-color: #173e35;
+  background-color: #000000;
 }
 
 .header .button.home-btn .btn:hover {
@@ -2025,12 +2025,12 @@ ol {
 }
 
 .sticky .button .btn {
-  background-color: #173e35;
+  background-color: #000000;
   color: #fff;
 }
 
 .sticky .button .btn:hover {
-  background-color: #173e35;
+  background-color: #000000;
   color: #fff;
 }
 
